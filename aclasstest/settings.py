@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'aclass.apps.AclassConfig',
+    'aclassdecorato.apps.AclassdecoratoConfig',
 ]
 
 MIDDLEWARE = [

@@ -16,8 +16,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+from aclassdecorato.views import my_decorator
+from . import views
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^',include('aclass.urls')),
-    url(r'^',include('aclassdecorato.urls')),
+    url(r'^index/$',my_decorator(views.classdecorator.as_view()))
 ]
