@@ -15,10 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+from . import views
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^',include('aclass.urls')),
-    url(r'^',include('aclassdecorato.urls')),
-    url(r'^',include('classmixin1.urls')),
+    url(r'^login/$',views.mixin_test.as_view())
 ]

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aclass.apps.AclassConfig',
     'aclassdecorato.apps.AclassdecoratoConfig',
+    'classmixin1.apps.Classmixin1Config',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 注册中间件
+    'middleware.my_middleware',
+    'middleware.my_middleware1',
 ]
 
 ROOT_URLCONF = 'aclasstest.urls'
